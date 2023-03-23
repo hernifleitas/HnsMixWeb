@@ -1,0 +1,193 @@
+*{ 
+    color: #fff;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #191919e7;
+}
+
+header{
+    background-color:#911b1b07;;
+    width: 100%;
+    padding: 4px;
+    border: 0px;
+    height: 80px    ;
+    border-radius: 4%;
+}
+
+header nav {
+    width: 100%;
+    padding:2px;
+}
+
+header nav .container #ocultar{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.options {
+    height: 6px;
+    color: white;
+    text-decoration: none;
+}
+
+.options:hover{
+    color: #fefe;
+    background-color: #fefefe11;
+    transition: all 0.2s;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+img{
+   width: 70px;
+   height: 30px;
+}
+.burger {
+    width: 40px;
+    text-align: center;
+    border: 2px solid #fefefe11;
+    font-size: 30px;
+    cursor:pointer;
+    display:none;
+}
+
+#home {
+    height: 700px;
+    overflow: hidden;
+    background-image: url(mixImage.jpg);
+    background-size:auto;
+    background-repeat: no-repeat;
+    background-color: #191919e7;
+    background-position:center;
+}
+
+#home span{
+    display: flex;
+    font-family: monospace;
+    white-space: nowrap;
+    font-size: 27px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    color: rgba(255, 255, 255, 0.534);
+    border-right: 4px solid;
+    width: 17ch;
+    animation:typing 2s steps(17), blink  .5s infinite step-end alternate  ;
+}
+
+#servidores {
+display: flex;
+height: 500px;
+}
+
+#servidores .server{
+    background-image: url(mixImage2.jpg);
+    background-size: cover;
+    background-color: #0b7909;
+    margin-top: 200px;
+    margin-left: 150px;
+    width: 300px;
+    height: 250px;
+}
+
+#servidores .server .serverInfo:hover{
+    background-color: rgba(128, 128, 128, 0.116);
+}
+
+#servidores .server .serverInfo{
+    text-align: center;
+    margin-top: 25px; 
+    color: transparent;
+}
+
+#servidores .server .serverInfo button{
+    background-color:#0841fd;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding:5px;
+    height: 70%;
+    margin-top: 160px;  
+    width: 70%;
+}
+
+
+
+footer{
+    padding: 20px;
+    flex-shrink: 0;
+    text-align: center;
+    border: 1px solid gray;
+}
+
+footer .social{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .social a{
+    text-transform: none;
+    text-decoration: none;
+    margin-top: 40px;
+}
+footer .social a:hover {
+    transition: all 0.5s;
+    transform:translateY(-7px)
+}
+
+@keyframes typing{
+    from {width: 0;}
+}
+
+@keyframes blink{
+    50% {border-color: transparent;}
+}
+
+@media screen and (max-width:468px){
+    header nav .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header nav .container #ocultar {
+        display: none;
+        flex-direction: column;
+    }
+
+    
+    .options { 
+       height: 50px;
+       margin: 10px;
+    }
+
+    #ocultar {
+        display: none;
+    }
+
+    .burger{
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-top: -35px;
+        
+    }
+
+    #burgertwo{
+        display: none;
+    }
+
+    header nav .container{
+        justify-content: space-between;
+    }
+    
+}
+
